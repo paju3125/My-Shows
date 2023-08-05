@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <title>My Shows</title>
+
+  <!-- Favicons -->
+  <link href="assets/img/title.jpg" rel="icon">
+  <link href="assets/img/title.jpg" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Heebo:wght@500;700&family=Lobster&display=swap"
+    rel="stylesheet" />
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/fontawesome/css/all.css" rel="stylesheet">
+  <link href="assets/vendor/animate.css/animate.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/venobox/venobox.css" rel="stylesheet">
+  <link href="assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body class="light">
+
+  <!-- ======= Header Start ======= -->
+
+  <header id="header" class="fixed-top light" data-aos="zoom-out">
+    <div class="container-fluid">
+      <div class="row justify-content-end">
+        <div class="col-xl-11 d-flex align-items-center justify-content-between">
+          <h1 class="logo" data-aos="fade-right" data-aos-delay="500"><a href="index.html"><i
+                class="icofont-ui-play icon-log"></i>MY SHOWS</a></h1>
+
+          <nav class="nav-menu d-none d-xl-block">
+            <ul>
+              <li class="active"><a href="#home">Home</a></li>
+              <li><a href="#popularmovies">Popular Movies</a></li>
+              <li><a href="#latestmovies">Latest Movies</a></li>
+              <li><a href="#oldmovies">Old Movies</a></li>
+              <li class="theatres"><a>Location</a></li>
+              <li><a href="#contact">Contact</a></li>
+
+              <a><i class="bx bx-sun togglemode"></i></a>
+              <a><i class="bx bx-moon togglemode d-none"></i></a>
+
+              <div class="searchbar d-flex align-items-center align-self-center">
+                <input type="text" list="searchitems" placeholder="Search here..." class="searchtext">
+                <button class="searchbtn"><i class="icofont-search-2"></i></button>
+
+                <ul class="search-list">
+
+                </ul>
+              </div>
+
+            </ul>
+          </nav>
+
+          <div class="nav-profile" data-aos="fade-left" data-aos-delay="500">
+            <button><i class="icofont-login"></i> Login</button>
+
+            <div class="profile d-none"></div>
+            <div class="profilename d-none">
+              <span></span>
+              <p><i class="icofont-check-circled"></i> User</p>
+            </div>
+
+            <div class="userprofile">
+              <ul>
+                <li><img src="assets/img/boss.svg"></li>
+                <li>
+                  <h4></h4>
+                </li>
+                <li><span><i class="icofont-logout"></i> Logout</span></li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- ======= Header End ======= -->
+
+  <!-- ======= Theater Start ======= -->
+
+  <div class="theatre">
+    <ul>
+      <h2 data-aos="zoom-in-up">Multiplexes</h2><br>
+      <li><a><img src="assets/img/building.png">Chitra Multiplex</a></li>
+      <li><a><img src="assets/img/building.png">My Cinema</a></li>
+      <li><a><img src="assets/img/building.png">Asha Multiplex</a></li>
+      <li><a><img src="assets/img/building.png">Shivam Plasa</a></li>
+      <li><a><img src="assets/img/building.png">Madhyan Multiplex</a></li>
+      <li><a><img src="assets/img/building.png">The Annexe</a></li>
+    </ul>
+  </div>
+
+  <!-- ======= Theater End ======= -->
+
+  <!-- ======= Login / Signup ======= -->
+
+  <section class="loginbg">
+    <center>
+      <div id="Loginmessage">
+      </div>
+    </center>
+    
+    <div class="row">
+      <div class="col-md-4 mx-auto d-flex justify-content-right">
+        <div class="login-box">
+          <div class="login-snip"> <input id="tab-1" type="radio" name="tab" class="sign-in" checked><label for="tab-1"
+              class="tab">Login</label> <input id="tab-2" type="radio" name="tab" class="sign-up"><label for="tab-2"
+              class="tab">Sign Up</label>
+            <div class="login-space">
+              <div class="login" style="margin-top: 30px;">
+                <form name="login" method="POST" action="login.php" autocomplete="off">
+                  <div class="group"> <label for="email" class="label">Email</label>
+                    <input id="email" type="email" name="email" class="input" placeholder="Enter your Email ID"
+                      pattern="[a-z0-9]{5,}@gmail.com$" title="example@gmail.com"
+                      value="prathameshchaudhary7122@gmail.com" autofocus required>
+                  </div>
+                  <div class="group"> <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" name="password" class="input" placeholder="Enter your password"
+                      pattern="[\S]{8,}" title="min 8 alphanumeric character" value="pratham@user" required>
+                    <span toggle="#password" class="fa fa-fw fa-eye field-icon toggle-password1"></span>
+                  </div>
+                  <div class="group"> <input id="check" name="admin" type="checkbox" class="check">
+                    <label for="check"><span class="icon"></span> Click here, if you are an admin.</label> </div>
+                  <div class="group">
+                    <input type="hidden" name="pageName" value="index.html">
+                    <input type="submit" class="button" name="loginb" value="Login">
+                  </div>
+                  <div class="hr"></div>
+                  <div class="foot" style="color: wheat;"> <a href="#">Forgot Password?</a> </div>
+                </form>
+              </div>
+              <div class="sign-up-form" style="margin-top: 30px;">
+                <form name="signup" method="POST" onsubmit="sign(event)" autocomplete="off">
+                  <div class="group"> <label for="user" class="label">Username</label>
+                    <input id="user" type="text" name="username" class="input" placeholder="Enter your Username"
+                      pattern="[\S]{3,}" title="min 3 letters needed" autofocus required>
+                  </div>
+                  <div class="group"> <label for="email2" class="label">Email</label>
+                    <input id="email2" name="email" type="email" class="input" placeholder="Enter your Email ID"
+                      pattern="[a-z0-9]{5,}@gmail.com$" title="example@gmail.com" required>
+                  </div>
+                  <div class="group">
+                    <label for="otp" class="label">OTP</label>
+                    <input class="inputc" name="code1" id="code1" type="text" maxlength="1" placeholder="?"
+                      oninput="this.value=this.value.replace(/[^0-9]/g,'')" onkeyup="nextcodebox(1, event)" required>
+                    <input class="inputc" name="code2" id="code2" type="text" maxlength="1" placeholder="?"
+                      oninput="this.value=this.value.replace(/[^0-9]/g,'')" onkeyup="nextcodebox(2, event)" required
+                      disabled>
+                    <input class="inputc" name="code3" id="code3" type="text" maxlength="1" placeholder="?"
+                      oninput="this.value=this.value.replace(/[^0-9]/g,'')" onkeyup="nextcodebox(3, event)" required
+                      disabled>
+                    <input class="inputc" name="code4" id="code4" type="text" maxlength="1" placeholder="?"
+                      oninput="this.value=this.value.replace(/[^0-9]/g,'')" onkeyup="nextcodebox(4, event)" required
+                      disabled>
+                    <button class="buttonc" onclick="sendotp()"><span id="verified">Get OTP</span></button>
+                  </div>
+                  <div class="group"> <label for="pass" class="label">Password</label>
+                    <input id="pass" type="password" name="password" class="input" placeholder="Create your Password"
+                      pattern="[\S]{8,}" title="min 8 alphanumeric character" required><span toggle="#password"
+                      class="fa fa-fw fa-eye field-icon toggle-password2"></span></div>
+                  <div class="group">
+                    <input type="submit" name="signupb" class="button" value="Sign Up">
+                  </div>
+                  <div class="hr"></div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+          <div class="closelogin"><i class="icofont-ui-close"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="loginbg2">
+    <div class="coupon-content">
+      <h1>Welcome</h1>
+      <h2>Your Coupon Code</h2>
+
+      <div class="code-list">
+        <ul>
+          <li>
+            <h4>Code</h4>
+            <h4>Discount</h4>
+            <h4>Quantity</h4>
+          </li>
+
+        </ul>
+      </div>
+
+      <div class="close-code"><i class="icofont-ui-close"></i></div>
+    </div>
+  </section>
+
+  <div class="pull-codes"><img src="assets/img/gift.svg" /></div>
+
+  <!-- ======= Login / Signup ======= -->
+
+  <!-- ======= Main Slider Start ======= -->
+
+  <section id="home" class="main-slider light">
+    <div class="owl-one owl-carousel owl-theme">
+      <div class="item">
+        <li>
+          <div class="banner b1" data-aos="zoom-in"></div>
+        </li>
+      </div>
+      <div class="item">
+        <li>
+          <div class="banner b2" data-aos="zoom-in"></div>
+        </li>
+      </div>
+      <div class="item">
+        <li>
+          <div class="banner b3" data-aos="zoom-in"></div>
+        </li>
+      </div>
+      <div class="item">
+        <li>
+          <div class="banner b4" data-aos="zoom-in"></div>
+        </li>
+      </div>
+      <div class="item">
+        <li>
+          <div class="banner b5" data-aos="zoom-in"></div>
+        </li>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Main Slider End ======= -->
+
+  <!-- ======= Popular Movies Start ======= -->
+
+  <section id="popularmovies" class="services light">
+
+    <div class="section-title" data-aos="fade-right">
+      <h4>Popular Movies</h4>
+    </div>
+
+    <div class="movie-con">
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/endgame.jpg">
+        <h2>Endgame</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/ms.jpg">
+        <h2>Mumbai Saga</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/joker.jpg">
+        <h2>Joker</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/kgf.jpg">
+        <h2>KGF - Chapter 1</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Popular Movies End ======= -->
+
+  <section class="social-images light">
+    <div class="row">
+      <div class="col-md-6">
+        <img src="assets/img/sd4.jpg" />
+      </div>
+      <div class="col-md-6">
+        <img src="assets/img/sd5.jpg" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Latest Movies Start ======= -->
+
+  <section id="latestmovies" class="services light">
+
+    <div class="section-title" data-aos="fade-right">
+      <h4>Latest Movies</h4>
+    </div>
+
+    <div class="owl-lm owl-carousel owl-theme">
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/endgame.jpg">
+          <h2>Endgame</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/ms.jpg">
+          <h2>Mumbai Saga</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/kgf.jpg">
+          <h2>KGF - Chapter 1</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/joker.jpg">
+          <h2>Joker</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/ms.jpg">
+          <h2>Mumbai Saga</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/ms.jpg">
+          <h2>Mumbai Saga</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/ms.jpg">
+          <h2>Mumbai Saga</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+      <div class="item">
+        <div class="movie-box" data-aos="flip-right">
+          <img src="assets/img/endgame.jpg">
+          <h2>endgame</h2>
+          <p>Action | Comedy | Horror</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ======= Latest Movies End ======= -->
+
+  <!-- ======= Old Movies Start ======= -->
+
+  <section id="oldmovies" class="services light">
+
+    <div class="section-title" data-aos="fade-right">
+      <h4>Old Movies</h4>
+    </div>
+
+    <div class="movie-con">
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/endgame.jpg">
+        <h2>Endgame</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/ms.jpg">
+        <h2>Mumbai Saga</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/joker.jpg">
+        <h2>Joker</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+
+      <div class="movie-box" data-aos="flip-right">
+        <img src="assets/img/kgf.jpg">
+        <h2>KGF - Chapter 1</h2>
+        <p>Action | Comedy | Horror</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Old Movies End ======= -->
+
+  <!-- ======= Mid slider start ======= -->
+
+  <section class="mid-slider light">
+    <div class="owl-two owl-carousel owl-theme" data-aos="zoom-in" data-aos-delay="200">
+      <div class="item">
+        <li>
+          <div class="banner b1">
+            <div class="container">
+              <div class="mid-info" data-aos="fade-left" data-aos-delay="400">
+                <p>Action | Horror</p>
+                <h4>Annabelle</h4>
+                <button><a href="https://youtu.be/TcMBFSGVi1c" class="venobox" data-vbtype="video"
+                    data-autoplay="true"><i class="icofont-ui-play"></i></a> Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+
+      <div class="item">
+        <li>
+          <div class="banner b2">
+            <div class="container">
+              <div class="mid-info" data-aos="fade-left" data-aos-delay="400">
+                <p>Action | Horror</p>
+                <h4>Endgame</h4>
+                <button><a href="https://youtu.be/TcMBFSGVi1c" class="venobox" data-vbtype="video"
+                    data-autoplay="true"><i class="icofont-ui-play"></i></a> Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+
+      <div class="item">
+        <li>
+          <div class="banner b3">
+            <div class="container">
+              <div class="mid-info" data-aos="fade-left" data-aos-delay="400">
+                <p>Action | Horror</p>
+                <h4>Jumanji - Welcome to the jungle</h4>
+                <button><a href="https://youtu.be/TcMBFSGVi1c" class="venobox" data-vbtype="video"
+                    data-autoplay="true"><i class="icofont-ui-play"></i></a> Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+
+      <div class="item">
+        <li>
+          <div class="banner b4">
+            <div class="container">
+              <div class="mid-info" data-aos="fade-left" data-aos-delay="400">
+                <p>Action | Horror</p>
+                <h4>Jumanji - Welcome to the jungle</h4>
+                <button><a href="https://youtu.be/TcMBFSGVi1c" class="venobox" data-vbtype="video"
+                    data-autoplay="true"><i class="icofont-ui-play"></i></a> Watch Trailer</button>
+              </div>
+            </div>
+          </div>
+        </li>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Mid slider end ======= -->
+
+  <section class="social-images light">
+    <div class="row">
+      <div class="col-md-12 m-auto">
+        <img src="assets/img/Covid3.jpg" style="height: 30rem;" />
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact Start ======= -->
+
+  <section id="contact" class="services">
+
+    <div class="section-title" data-aos="fade-right">
+      <h4>Contact</h4>
+    </div>
+
+    <div class="ccontainer" data-aos="zoom-in-up" data-aos-delay="100">
+      <span class="big-circle"></span>
+      <img src="assets/img/shape.png" class="square" alt="" />
+      <div class="form">
+        <div class="contact-info" data-aos="fade-right" data-aos-delay="400">
+          <h3 class="title">Let's get in touch</h3>
+          <p class="text">We'd love to hear from you!</p>
+
+          <div class="info">
+            <div class="information">
+              <i class="icofont-location-pin cicon"></i>
+              <p>92 Cherry Drive Uniondale, NY 11553</p>
+            </div>
+            <div class="information">
+              <i class="icofont-mail cicon"></i>
+              <p>myshows.g2@gmail.com</p>
+            </div>
+            <div class="information">
+              <i class="icofont-phone cicon"></i>
+              <p>9284240426</p>
+            </div>
+          </div>
+
+          <div class="social-media">
+            <p>Connect with us :</p>
+            <div class="social-icons" data-aos="flip-up" data-aos-delay="700">
+              <a href="#">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-twitter"></i>
+              </a>
+              <a href="#">
+                <i class="fab fa-instagram"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <span class="circle one"></span>
+          <span class="circle two"></span>
+
+          <form name="contact" onsubmit="sendfeed(event)" autocomplete="off" data-aos="fade-left" data-aos-delay="400">
+            <h3 class="title">Contact us</h3>
+            <div class="input-container">
+              <input type="text" name="name" placeholder="Username" class="input" pattern="[\S]{1,}"
+                title="Space is not allowed here" required />
+            </div>
+            <div class="input-container">
+              <input type="email" name="email" placeholder="Email" class="input" pattern="[a-z0-9]{5,}@gmail.com$"
+                title="example@gmail.com" required />
+            </div>
+            <div class="input-container">
+              <input type="text" name="phone" placeholder="Phone no" class="input"
+                oninput="this.value=this.value.replace(/[^0-9]/g,'')" maxlength="10" pattern="[0-9]{10}$" />
+            </div>
+            <div class="input-container textarea">
+              <textarea name="message" placeholder="Message" class="input" required></textarea>
+            </div>
+            <input type="submit" value="Send Message" class="btn" />
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ======= Contact End ======= -->
+
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top"><i class="ri-arrow-up-line"></i></a>
+
+  <nav class="mobile-nav d-xl-none light">
+    <ul>
+      <div class="searchbar d-flex align-items-center align-self-center">
+        <input type="text" placeholder="Search here..." class="searchtext">
+        <button class="searchbtn"><i class="icofont-search-2"></i></button>
+      </div>
+
+      <div class="togicon">
+        <a><i class="bx bx-sun togglemode"></i></a>
+        <a><i class="bx bx-moon togglemode d-none"></i></a>
+      </div>
+
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#popularmovies">Popular Movies</a></li>
+      <li><a href="#latestmovies">Latest Movies</a></li>
+      <li><a href="#oldmovies">Old Movies</a></li>
+      <li class="theatres"><a>Location</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- <div class="intro">
+    <div class="intro-text">
+      <h1 class="hide">
+        <span class="text">Let's unlock</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">the world of</span>
+      </h1>
+      <h1 class="hide">
+        <span class="text">ENTERTAINMENT</span>
+      </h1>
+    </div>
+  </div>
+  <div class="slider"></div> -->
+
+  <!-- Vendor JS Files -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.1/gsap.min.js"
+    integrity="sha512-cdV6j5t5o24hkSciVrb8Ki6FveC2SgwGfLE31+ZQRHAeSRxYhAQskLkq3dLm8ZcWe1N3vBOEYmmbhzf7NTtFFQ=="
+    crossorigin="anonymous"></script>
+
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="assets/vendor/counterup/counterup.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/venobox/venobox.min.js"></script>
+  <script src="assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+
+</html>
