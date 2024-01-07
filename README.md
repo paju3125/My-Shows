@@ -8,6 +8,7 @@ Ability to the **Admin** to add or remove slides of slider, add/update/delete mo
 
 
 -------------------------------------------------------------------------------------------------------------------------------------------------------------------
+**Link for Demo:** https://myshowshere123.000webhostapp.com/index.html
 
 **Functional Description**
 
